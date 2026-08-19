@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <h1>javascript json</h1>
+    <h2>create a json string format</h2>
+    <p id="demo"></p>
+    <script>
+        const myobj = {"name" : "ash" , "age" : 18}
+        const myJSON = JSON.stringify(myobj);
+
+        document.getElementById("demo").innerHTML = myJSON;
+    </script>
+    </body>
+</html>
