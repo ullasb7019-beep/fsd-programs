@@ -1,0 +1,16 @@
+var num = 4;
+  if (num == 1 ){
+  console.log ("typescript statement 1");
+}
+
+else if (num == 2 ){
+  console.log ("typescript statement 2");
+}
+
+else if (num == 3 ){
+  console.log ("typescript statement 3");
+}
+
+else {
+console.log ("typescript statement n");
+}
