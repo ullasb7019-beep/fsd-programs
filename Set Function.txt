@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1> javascripts sets </h1>
+        <h2> the add() method </h2>
+
+        <p> the add() method add values to a set:</p>
+        <p id="demo"> </p>
+
+        <script>
+            //create a set
+            const letters = new Set();
+            //add values to the set
+            letters.add("a");
+            letters.add("b");
+            letters.add("c");
+
+            //display the size
+            document.getElementById("demo").innerHTML = "the set has " + letters.size + " values.";
+        </script>
+    </body>
+</html>
