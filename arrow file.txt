@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Javascript maps</h1>
+        <h2>the new map() method</h2>
+        <p>creating a map from an array:</p>
+        <p id="demo"></p>
+        <script>
+            //create a map
+            const fruits = new Map([
+                ["apples", 500],
+                ["bananas", 300],
+                ["oranges", 200]
+            ]);
+            let numb = fruits.get("apples");
+            document.getElementById("demo").innerHTML = "There are" + numb + " apples.";
+        </script>
+    </body>
+</html>
