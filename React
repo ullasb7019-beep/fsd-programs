@@ -1,0 +1,43 @@
+function App() {
+  return (
+    <>
+      <form action="#" className="formc">
+        <label htmlFor="first-last">Full name:</label>
+        <div>
+          <input type="text" name="first" className="elem input" />
+          <div>
+            <label htmlFor="username">user-name:</label>
+            <input type="text" name="username" className="elem input" /><br />
+            
+            <label htmlFor="Email">E-mail:</label>
+            <input type="email" name="email" className="elem input" /><br />
+            
+            <label htmlFor="password">Password:</label>
+            <input type="password" name="password" className="elem input" /><br />
+            
+            <label htmlFor="confirmpassword">confirm password:</label>
+            <input type="password" name="confirmpassword" className="elem input" /><br />
+            
+            <label htmlFor="dob">Date-of-birth:</label>
+            <input type="date" name="dob" className="elem input" /><br />
+            
+            <div className="gen">
+              <p>Gender:</p>
+              <div className="lab">
+                <input type="radio" name="gender" value="male" id="male" />
+                <label htmlFor="male">male</label>
+                <input type="radio" name="gender" value="female" id="female" />
+                <label htmlFor="female">female</label>
+              </div>
+            </div>
+            
+            <br />
+            <input type="submit" value="Register" />
+          </div>
+        </div>
+      </form>
+    </>
+  );
+}
+
+export default App;
