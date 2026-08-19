@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>javascript json</h1>
+        <script>
+            let a=1+2;
+            switch (a)
+            {
+                case 1 :
+                    alert ("the number is wrong");
+                    break
+
+                case 2 :
+                    alert ("the number is correct");
+                    
+                    
+                default :
+                alert ("input invalid");
+                break
+
+            }
+        </script>
+        </body>
+        </html>
