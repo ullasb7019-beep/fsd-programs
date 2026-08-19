@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Es6 function</h1>
+<p>This is Es6 arrow function</p>
+<p id="demo"></p>
+<script>
+// add computes the sum of a and 
+const add = (a, b) => a+b;
+
+let result =add(4, 5);
+
+document.getElementById("demo").innerHTML = "The sum is: " + result
+</script>
+
+</body>
+</html>  
