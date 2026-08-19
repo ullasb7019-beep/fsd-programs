@@ -1,0 +1,14 @@
+C:\Users\LAB 12>npm install -g typescript
+
+added 2 packages in 22s
+
+C:\Users\LAB 12>node --version
+v22.23.2
+
+C:\Users\LAB 12>mkdir tsprac
+
+C:\Users\LAB 12>cd tsprac
+
+C:\Users\LAB 12\tsprac>notepad prg1.ts
+
+C:\Users\LAB 12\tsprac>node prg1.ts
