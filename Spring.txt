@@ -1,0 +1,18 @@
+package com.example.demo;
+
+import javax.naming.Context;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class CustomerApplication {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext  Context = SpringApplication.run(CustomerApplication.class, args);
+		Idea c = Context.getBean(Idea.class);
+		c.display();
+	}
+
+}
