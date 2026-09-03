@@ -1,0 +1,78 @@
+1. explain in inversion of control.?
+Answer. The IOC of control principal dependency specialised From ioc Use by object. Defined their independence That is the Other objects they work With only through constructor arguments constructor organisation, the process of ioc's fundamental Independent. that control. Flow of development in spring to help develop dependency injection.
+
+2. Explain spring annotations with examples.?
+Answer. Spring annotations are xml Extensible designed In a such way to avoid development of several libraries.
+
+1)@Autowired: To mark which spring is going to resolve And inject from one class to another
+example: class car{
+engine engine;
+@Autowired
+car(engine engine){
+this.engine = engine;
+}
+}
+
+2) @Bean: Mark a factory Method, which ininate spring Bean.
+example: @Bean
+Engine engine(){
+return new engine();
+}
+
+3)@Qualifer: Along with @Autowire To provide the bean id or bean name. We want To use in different Situations.
+example: class Bike implements Vechile{}
+
+4)@Value: We can use@Value For injecting properties values into BEAN. It is complicated with constructor setters and field injection.
+example: Engine(@Value("8")int cylinder count){
+this. cylinder = cylinder count;
+}
+
+5)@ Dependson: We can use this annotation to make spring installation BEAN. Before the annotated One usually this behaviour is automatic Based on the explicity Dependency.
+example: @DependsOn("engine"){
+class car implements vechile{
+}
+}
+
+6)@Lazy: we can @Lazy anatation When When we want to initialise Won't be in lazy by default. Spring creator, all singleton bean.
+@Configuration
+@Lazy
+class Vechile Factoryconfig{
+@Bean
+@Lazy(false)
+} 
+
+2) explain Types of dependency injection?
+Answer. 1) Constructor injection: When we inject two dependency of one class into another class via Constructors then called as constructor injection.
+2. Setter injection: When we inject the dependency Of one class Into another class via Setter then Called a sector injection.
+3. Field injection: Dependencies are directly injected Into the field by Using @Autowired Or manually. This is nothing but field injection it is very complex to develop. So for it is not recommended for testing.
+
+3) Explain spring framework architecture briefly with neat diagram.?
+Answer. *) Data access/intergration: Delayer provides our help to work database creation insertion and many operation provided with database.
+*)spring JDBC: That provides jdbc code in order to connect with database.
+*) spring orm: Provides integration with ORM tools like hibernate Jpa.
+*) spring transaction: It provides transaction between JDPC and apis configure Programmes
+*) web layer: Developer support set of modules to communicate data between one to one
+*) spring mvc: Model wave controller is designed to request for http, Jason and all the web application.
+*)spring web flux: Supports building reactive applications and helps to communicate between other programming frameworks built to web technology.
+*)spring web services: This supports encrypting and decrypting and html base and web application.
+*) miscellameous layer: It supports extended spring technologies..
+*) spring security: This helps authentication authorization and access control management for application using spring framework.
+*) spring batch: They sell processing for reusable components for developing the same components repeatedly
+*) spring cloud: Provides Tools to manage cloud technologies provided by spring framework.
+
+4) Explain object oriented programmes and design principles?
+Answer.Object-Oriented Programming (OOP) is a programming approach where a software system is designed around objects rather than just functions and procedures.
+
+An object represents something that has:
+
+Data → properties/attributes
+Behavior → methods/functions
+
+class User {
+    String name;
+    String email;
+
+    void login() {
+        System.out.println("User logged in");
+    }
+}
