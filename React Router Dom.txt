@@ -1,0 +1,59 @@
+App.js.......
+
+import Fashion from "./pages/Fashion";
+import Furniture from "./pages/Furniture";
+import Mobiles from "./pages/Mobiles";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <nav>
+        <Link to="/fashion">Fashion</Link>{" "}
+        <Link to="/furniture">Furniture</Link>{" "}
+        <Link to="/mobiles">Mobiles</Link>
+      </nav>
+
+      <Routes>
+        <Route path="/fashion" element={<Fashion />} />
+        <Route path="/furniture" element={<Furniture />} />
+        <Route path="/mobiles" element={<Mobiles />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
+
+
+Mobile.js...
+
+function Mobiles() {
+  return (
+    <h1>Welcome to the Mobiles section of our website!</h1>
+  );
+}
+
+export default Mobiles;
+
+
+Furniture.js....
+
+function Furniture() {
+  return (
+    <h1>Welcome to the Furniture section of our website!</h1>
+  );
+}
+
+export default Furniture;
+
+
+Fashion.js..
+
+function Fashion() {
+  return (
+    <h1>Welcome to the Fashion section of our website!</h1>
+  );
+}
+
+export default Fashion;
