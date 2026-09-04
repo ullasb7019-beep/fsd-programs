@@ -1,4 +1,4 @@
-1. explain in inversion of control.?
+1. Explain in inversion of control.?
 Answer. The IOC of control principal dependency specialised From ioc Use by object. Defined their independence That is the Other objects they work With only through constructor arguments constructor organisation, the process of ioc's fundamental Independent. that control. Flow of development in spring to help develop dependency injection.
 
 2. Explain spring annotations with examples.?
