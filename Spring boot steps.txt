@@ -1,0 +1,26 @@
+1. open Eclipse IDE.
+2. click on 'Help' Tab and click on 'Eclipse Market'.
+3. Search for 'Spring Tools Suite' and install it.
+4. Click on 'File'->'New'->'Project'-->'Spring Boot'-->'Spring Starter Project'. And enter the Name of the Project and Click on Next.
+5. Click on 'CustomerDI'(Project name) on Project Explorer, and click on 'Src/Main/Java'-->'Com.example.demo'-->'CustomerDIapplication.java'.
+6. Right Click on 'CustomerDIapplication.java' and click on New-->Class, and enter the Class Name and click on Next.
+7. On New Class, Type:-
+        private int custid;
+	private String custname;
+	private String course;
+8. Select above Three lines and right click and go to 'Source'-->'Generate Getters and Setters'.
+9. After generating, Copy the last two lines of Code and remove it.. And paste it Below the "private int custid;"...
+10. go to "CustomerDIapplication.java" file and add "ConfigurableApplicationContext Context =" Before "SpringApplication.run(CustomerDiApplication.class, args);",
+    So if Combined it looks like "ConfigurableApplicationContext Context = SpringApplication.run(CustomerDiApplication.class, args);"..
+11. add these two lines Below "ConfigurableApplicationContext Context = SpringApplication.run(CustomerDiApplication.class, args);" :-
+     Customers c = Context.getBean(Customers.class);
+     c.display();
+12. Select "ConfigurableApplicationContext" and move the cursor to it until u see the options..
+13. Then Click on "import________"
+14. Go to "Customers.java" again and Type "@Component" and Select "@Component" and move the cursor to it until u see the options, and click on "import____"
+15. And Type this code in Between the last 2 Paranthesis:-
+    public void display()
+	
+	{
+		System.out.println("DI is getting");
+	}
