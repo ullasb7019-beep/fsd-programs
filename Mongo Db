@@ -1,0 +1,13 @@
+Create 
+db.Student.insertMany([{name:"Thor",age:1500,city:"Asgard"},{name:"Loki",age:1500,city:"TVA"}])
+
+ Read 
+db.Student.findOne({name:"Thor"})
+
+  Update
+db.Student.updateOne({name:"Thor"},{$set:{age:1510}})
+
+  Delete
+db.Student.deleteOne({name:"Loki"})
+
+db.Student.find().sort({ age: 1 })
