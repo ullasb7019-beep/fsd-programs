@@ -1,0 +1,5 @@
+From eclipse-temurin:27-jdk-alpine
+WORKDIR /app
+COPY sample.java .
+RUN javac sample.java
+CMD ["java" , "sample"]
