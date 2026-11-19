@@ -1,0 +1,51 @@
+package com.springweb.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@SpringBootApplication
+public class DemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DemoApplication.class, args);
+	}
+}
+
+@RestController
+@RequestMapping("/api/tasks")
+class TaskController {
+
+	private final List<String> t1 =
+			new ArrayList<>(List.of("complete chapter 2"));
+
+	// GET: Get all tasks
+	@GetMapping
+	public List<String> getT1() {
+		return t1;
+	}
+
+	// POST: Add a new task
+	@PostMapping
+	public String addTask(@RequestBody String newTask) {
+		t1.add(newTask);
+		return "Task added successfully: " + newTask;
+	}
+
+	// PUT: Update an existing task
+	@PutMapping("/{id}")
+	public String updateTask(
+			@PathVariable int id,
+			@RequestBody String updatedTask) {
+
+		if (id >= 0 && id < t1.size()) {
+			t1.set(id, updatedTask);
+			return "Task at index " + id + " updated successfully: " + updatedTask;
+		}
+
+		return "Invalid task ID: " + id;
+	}
+}
