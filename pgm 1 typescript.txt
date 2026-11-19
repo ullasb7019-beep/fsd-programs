@@ -1,0 +1,12 @@
+let a = null;
+let b = 123;
+let c = 123.456;
+let d = "fsd";
+let e = undefined;
+let f = true;
+console.log (a);
+console.log (b);
+console.log (c);
+console.log (d);
+console.log (e);
+console.log (f);
