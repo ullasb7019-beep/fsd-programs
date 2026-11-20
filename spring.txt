@@ -1,0 +1,53 @@
+package com.example.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+@SpringBootApplication
+public class FocusApplication {
+
+	public static void main(String[] args) {
+		 ConfigurableApplicationContext Context = SpringApplication.run(FocusApplication.class, args);
+		 Project p = Context.getBean(Project.class);
+		 p.Pro();
+	}
+
+}
+
+this is class
+
+package com.example.demo;
+
+import org.springframework.stereotype.Component;
+
+@Component
+
+public class Project {
+	private int custid;
+	private String custname;
+	private String coursename;
+	public int getCustid() {
+		return custid;
+	}
+	public void setCustid(int custid) {
+		this.custid = custid;
+	}
+	public String getCustname() {
+		return custname;
+	}
+	public void setCustname(String custname) {
+		this.custname = custname;
+	}
+	public String getCoursename() {
+		return coursename;
+	}
+	public void setCoursename(String coursename) {
+		this.coursename = coursename;
+	}
+	public void Pro() {
+		System.out.println("ullas is getting");
+	}
+	
+
+}
