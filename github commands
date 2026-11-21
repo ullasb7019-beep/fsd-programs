@@ -1,0 +1,15 @@
+git --version
+mkdir fsd
+cd fsd
+vi fsd lab
+git init
+git fsd lab
+git config --global user.name"user name"
+git commit-m "this is my fsd lab git file"
+git push-origin Master
+git clone "https://github come/karlhu slab-git".
+git branch user1
+git branch
+git branch user2
+git merge user1
+git pull
